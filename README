@@ -1,0 +1,72 @@
+					README
+______________________________________________________________________________________________
+
+First Commit
+============
+
+ Files added
+	+ Parse.java             : Functionality to Parse the data
+	+ XMLWriter.java         : Functionality to write XML
+	+ GEDCOM2XML.java        : Functionality to process
+	+ AnalyzeGEDCOM2XML.java : Functionality to Test GEDCOM2XML convertion
+	+ GEDCOM_Parser_Challenge_sample_data.txt  : Input file
+	+ GEDCOM_Parser_Challenge_result.xml       : Output file
++ It takes GEDCOM input file and convert it to XML file 
++ Compilation : javac TestGEDCOM2XML.java
++ Format: java TestGEDCOM2XML <gedcominputfilename> <xmloutputfilename>
+
+______________________________________________________________________________________________
+The path for the INPUT and OUTPUT files are mentioned in GEDCOM2XML.properties file
+INPUT: GEDCOM_Parser_Challenge_sample_data.txt
+OUTPUT: GEDCOM_Parser_Challenge_result.xml 
+(Note: Intellij IDE 11.1 Ultimate version was used to develop this project)
+______________________________________________________________________________________________
+
+Second Commit
+=============
+
+
+ Note: Information mentioned in First commit still valid
++ Added Junit Test Framework
+ Files added
+        + README                 : Short one page description of Project
+	+ GEDCOM2XMLTest.java    : TestCases for GEDCOM2XML
+	+ GEDCOM2XML.properties  : Default path for INPUT and OUTPUT files 
+	                                   used by AnalyzeGEDCOM2XML.java 
+	+ test.properties        : Default path for INPUT, EXPECTED and ACTUAL OUTPUT files
+> Compilation : javac   -cp .:junit-4.10.jar *.java
+> Usage java -cp .:junit-4.10.jar org.junit.runner.JUnitCore GEDCOMTestSuite
+
+______________________________________________________________________________________________
+
+"C:\Program Files\Java\jdk1.7.0_03\bin\java" -ea -Didea.launcher.port=7543 "-Didea.launcher.bin.path=C:\Program Files\JetBrains\IntelliJ IDEA 11.1.2\bin" -Dfile.encoding=UTF-8 -classpath "C:\Program Files\JetBrains\IntelliJ IDEA 11.1.2\lib\idea_rt.jar;C:\Program Files\JetBrains\IntelliJ IDEA 11.1.2\plugins\junit\lib\junit-rt.jar;C:\Program Files\Java\jdk1.7.0_03\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.7.0_03\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.7.0_03\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.7.0_03\jre\lib\jce.jar;C:\Program Files\Java\jdk1.7.0_03\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.7.0_03\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.7.0_03\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.7.0_03\jre\lib\resources.jar;C:\Program Files\Java\jdk1.7.0_03\jre\lib\rt.jar;C:\Program Files\Java\jdk1.7.0_03\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.7.0_03\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.7.0_03\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.7.0_03\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.7.0_03\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.7.0_03\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.7.0_03\jre\lib\ext\zipfs.jar;C:\Documents and Settings\Administrator\IdeaProjects\GEDCOM2XML\out\test\GEDCOM2XML;C:\Documents and Settings\Administrator\IdeaProjects\GEDCOM2XML\out\production\GEDCOM2XML;C:\Program Files\JetBrains\IntelliJ IDEA 11.1.2\lib\junit-4.10.jar" com.intellij.rt.execution.application.AppMain com.intellij.rt.execution.junit.JUnitStarter -ideVersion5 GEDCOM2XMLTest
+
+In GEDCOM2XMLTest::setUp
+In GEDCOM2XMLTest::WhiteSpacebtLevelAndTag
+INPUT FILE:           C:\GedcomFolder\input\TC_Input_WhiteSpaceBetweenLevelAndTag.txt
+ACTUAL OUTPUT FILE:   C:\GedcomFolder\output\testing\ActualOutput\TC_ActualOutput_WhiteSpaceBetweenLevelAndTag.xml
+EXPECTED OUTPUT FILE: C:\GedcomFolder\output\testing\ExpectedResult\TC_ExpectedResult_WhiteSpaceBetweenLevelAndTag.xml
+In GEDCOM2XMLTest::convertGEMCOM2XML
+In GEDCOM2XMLTest::compareExpectedWithActual
+In GEDCOM2XMLTest::tearDown
+
+In GEDCOM2XMLTest::setUp
+In GEDCOM2XMLTest::testBlankLines
+INPUT FILE:           C:\GedcomFolder\input\TC_Input_BlankLines.txt
+ACTUAL OUTPUT FILE:   C:\GedcomFolder\output\testing\ActualOutput\TC_ActualOutput_BlankLines.xml
+EXPECTED OUTPUT FILE: C:\GedcomFolder\output\testing\ExpectedResult\TC_ExpectedResult_BlankLines.xml
+In GEDCOM2XMLTest::convertGEMCOM2XML
+In GEDCOM2XMLTest::compareExpectedWithActual
+In GEDCOM2XMLTest::tearDown
+
+In GEDCOM2XMLTest::setUp
+In GEDCOM2XMLTest::testSampleDataValues
+INPUT FILE:           C:\GedcomFolder\input\TC_Input_SampleDataValues.txt
+ACTUAL OUTPUT FILE:   C:\GedcomFolder\output\testing\ActualOutput\TC_ActualOutput_SampleDataValues.xml
+EXPECTED OUTPUT FILE: C:\GedcomFolder\output\testing\ExpectedResult\TC_ExpectedResult_SampleDataValues.xml
+In GEDCOM2XMLTest::convertGEMCOM2XML
+In GEDCOM2XMLTest::compareExpectedWithActual
+In GEDCOM2XMLTest::tearDown
+
+Process finished with exit code 0
+______________________________________________________________________________________________

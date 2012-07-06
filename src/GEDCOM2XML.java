@@ -67,7 +67,7 @@ public class GEDCOM2XML {
         String strLine = null;
 
         // Root Node which is gedcom here this
-        // will become your previous line
+        // will become previous line
         String strPrevLine = getRootNode();
         Parse prev = new  Parse(strPrevLine);
 
